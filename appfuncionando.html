@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCyclo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #1e5631;
+    }
+
+    .container {
+      width: 320px;
+      background-color:  #e4ccb5;
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #6ea96e;
+    }
+
+    .search-bar {
+      width: 100%;
+      margin: 15px 0;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .card-title {
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .btn-solicitar, .btn-mostrar, .button, .button-secondary {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn-mostrar {
+      background-color: #3e8e41;
+    }
+
+    .btn-solicitar:hover, .btn-mostrar:hover, .button:hover, .button-secondary:hover {
+      opacity: 0.9;
+    }
+
+    .input-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      border: 2px solid #37A96E;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: #FFFFFF;
+    }
+
+    .input-container img,
+    .input-container i {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .input-container input,
+    .input-container textarea {
+      border: none;
+      outline: none;
+      width: 100%;
+    }
+
+    .button-secondary {
+      background-color: #FFFFFF;
+      color: #37A96E;
+      border: 2px solid #37A96E;
+      border-radius: 8px;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Tela Principal -->
+  <div class="container" id="main-screen">
+    <div class="header">
+      <div class="logo">ECOCYCLO</div>
+      <div>
+        <img src="./imagens/usuario.png" alt="Usuário" width="70">
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <a href="perfill.html">
+      <input type="button" class="search-bar" value="Acessar Perfil" style="background-color: #2b8b2e;; border: none; color: #fff; cursor: pointer; font-size: 16px; padding: 10px 20px; text-align: left;">
+    </a>
+    
+    
+
+    <!--input type="text" class="search-bar" placeholder="Sobre o aplicativo"--->
+
+
+
+
+
+    <div class="section">
+      <div class="section-title">Recicle aqui</div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./imagens/caminhao lixoooo.png" alt="Coleta Residencial" class="card-image">
+          <div class="card-title">Coleta Residencial</div>
+        </div>
+        <button class="btn-solicitar" onclick="showResidentialCollectionScreen()">Solicitar</button>
+      </div>
+
+<!--Telas de minhas coletas ->
+
+      <div class="card">
+        <div class="card-content">
+          <img src="./imagens/Captura_de_tela_2024-10-01_145329-removebg-preview.png" alt="Minhas Coletas" class="card-image">
+          <div class="card-title">Minhas Coletas</div>
+        </div>
+        <button class="btn-mostrar">Mostrar</button>
+ 
+
+      </div>
+
+
+<!-- Tela de minhas coletas -->
+<div class="card">
+  <div class="card-content">
+    <img src="./imagens/Captura_de_tela_2024-10-01_145329-removebg-preview.png" alt="Minhas Coletas" class="card-image">
+    <div class="card-title">Minhas Coletas</div>
+  </div>
+  <!-- Botão de navegação para a página de Minhas Coletas -->
+  <a href="minhascoletas.html">
+    <button class="btn-mostrar">Mostrar</button>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="section">
+      <div class="section-title">Comunique aqui</div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./imagens/coletores.png" alt="Chamar Coletores" class="card-image">
+          <div class="card-title">Chamar Coletores</div>
+        </div>
+        <button class="btn-solicitar" onclick="showCollectorScreen()">Solicitar</button>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./imagens/png-clipart-employment-customer-service-labor-consultant-others-miscellaneous-service-removebg-preview.png" alt="Contatar Suporte" class="card-image">
+          <div class="card-title">Contatar Suporte</div>
+        </div>
+        <button class="btn-solicitar" onclick="showSupportScreen()">Solicitar</button>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Tela de Chamar Coletores -->
+  <div class="container" id="collector-screen" style="display: none;">
+    <div class="header">
+      <img src="./imagens/Captura_de_tela_2024-09-30_194148-removebg-preview.png" alt="Logo" class="logo" height="50px" width="50px">
+      <div class="user-icon"><img src="./imagens/usuario.png" alt="" width="50px" height="50px"></div>
+    </div>
+    <h1 style="text-align: center; font-size: 18px; color: #1B5938;">Chamar Coletores</h1>
+    <div class="input-container">
+      <i class="location-icon">📍</i>
+      <input type="text" placeholder="Insira sua Localização">
+    </div>
+    <div class="input-container">
+      <i class="image-icon">🖼️</i>
+      <input type="text" placeholder="Insira Imagem">
+    </div>
+    <div class="input-container">
+      <textarea placeholder="Coloque a descrição" rows="3"></textarea>
+    </div>
+    <button class="button" onclick="showCollectorSentScreen()">Enviar Chamado</button>
+    <button class="button-secondary large-button" onclick="showMainScreen()">Voltar</button>
+  </div>
+  
+  <!-- Tela de Chamado Enviado -->
+  <div class="container" id="collector-sent-screen" style="display: none;">
+    <h1 style="color: #37A96E; text-align: center;">Chamado Enviado!</h1>
+    <p style="text-align: center; color: #333;">Seu chamado foi enviado com sucesso. Agradecemos pela sua colaboração!</p>
+    <button class="button large-button" onclick="showMainScreen()">Voltar</button>
+  </div>
+  
+  <script>
+    function showCollectorScreen() {
+      hideAllScreens();
+      document.getElementById('collector-screen').style.display = 'block';
+    }
+  
+    function showCollectorSentScreen() {
+      hideAllScreens();
+      document.getElementById('collector-sent-screen').style.display = 'block';
+    }
+  
+    function showMainScreen() {
+      hideAllScreens();
+      document.getElementById('main-screen').style.display = 'block';
+    }
+  
+    // Função para ocultar todas as telas
+    function hideAllScreens() {
+      document.getElementById('main-screen').style.display = 'none';
+      document.getElementById('collector-screen').style.display = 'none';
+      document.getElementById('collector-sent-screen').style.display = 'none';
+    }
+  </script>
+  
+
+
+
+
+   <!-- Tela de Coleta Residencial -->
+  <style>
+    .large-button {
+      padding: 20px; /* Aumenta o preenchimento interno */
+      font-size: 20px; /* Aumenta o tamanho da fonte */
+      display: block; /* Centraliza o botão */
+      margin: 20px auto; /* Espaço em cima e embaixo, e centraliza o botão */
+    }
+  
+    .container {
+      text-align: center; /* Centraliza o texto na tela */
+    }
+  
+    .input-container {
+      margin-bottom: 20px; /* Espaço entre os campos de entrada */
+    }
+  
+    h1, p {
+      margin-bottom: 15px; /* Espaço entre os textos */
+    }
+  </style>
+  
+  <div class="container" id="residential-collection-screen" style="display: none;">
+    <div class="header">
+      <img src="./imagens/Captura_de_tela_2024-09-30_194148-removebg-preview.png" alt="Logo" class="logo" height="50px" width="50px">
+      <div class="user-icon"><img src="./imagens/usuario.png" alt="" width="50px" height="50px"></div>
+    </div>
+    <h1 style="color: #1B5938;">Coleta Residencial</h1>
+    <div class="input-container">
+      <i class="location-icon">📍</i>
+      <input type="text" placeholder="Insira sua Localização">
+    </div>
+    <div class="input-container">
+      <textarea placeholder="Coloque a descrição" rows="3"></textarea>
+    </div>
+    <button class="button" onclick="showResidentialCollectionSentScreen()">Enviar Chamado</button>
+    <button class="button-secondary large-button" onclick="showMainScreen()">Voltar</button>
+  </div>
+  
+  <!-- Tela de Chamado Enviado -->
+  <div class="container" id="residential-collection-sent-screen" style="display: none;">
+    <h1 style="color: #37A96E;">Chamado Enviado!</h1>
+    <p style="color: #333;">Seu chamado foi enviado com sucesso. Agradecemos pela sua colaboração!</p>
+    <button class="button large-button" onclick="showMainScreen()">Voltar</button>
+  </div>
+
+<script>
+  function showResidentialCollectionScreen() {
+    // Esconde todas as telas e exibe a tela de coleta residencial
+    hideAllScreens();
+    document.getElementById('residential-collection-screen').style.display = 'block';
+  }
+
+  function showResidentialCollectionSentScreen() {
+    // Esconde todas as telas e exibe a tela de chamado enviado
+    hideAllScreens();
+    document.getElementById('residential-collection-sent-screen').style.display = 'block';
+  }
+
+  function showMainScreen() {
+    // Esconde todas as telas e exibe a tela principal
+    hideAllScreens();
+    document.getElementById('main-screen').style.display = 'block';
+  }
+
+  // Função para ocultar todas as telas
+  function hideAllScreens() {
+    document.getElementById('main-screen').style.display = 'none';
+    document.getElementById('residential-collection-screen').style.display = 'none';
+    document.getElementById('residential-collection-sent-screen').style.display = 'none';
+  }
+</script>
+
+<style>
+  .button-secondary.large-button {
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    padding: 15px; /* Aumenta o preenchimento */
+    width: 100%; /* Faz com que o botão ocupe a largura total */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+  }
+</style>
+
+<!-- Tela de Suporte -->
+<div class="container" id="support-screen" style="display: none;">
+  <div class="header">
+      <div class="logo">SUPORTE</div>
+      <div class="user-icon"><img src="./imagens/usuario.png" alt="" width="50px" height="50px"></div>
+  </div>
+  <h1 style="text-align: center; font-size: 18px; color: #1B5938;">Suporte</h1>
+  <div class="input-container">
+      <input type="text" placeholder="Digite seu nome">
+  </div>
+  <div class="input-container">
+      <input type="tel" placeholder="Digite seu telefone">
+  </div>
+  <div class="input-container">
+      <textarea placeholder="Digite sua reclamação" rows="5"></textarea>
+  </div>
+  <button class="button" onclick="showSupportSentScreen()">Enviar Reclamação</button>
+  <button class="button-secondary" onclick="showMainScreen()">Voltar</button>
+</div>
+
+<!-- Tela de Suporte Enviado -->
+<div class="container" id="support-sent-screen" style="display: none;">
+  <h1 style="color: #37A96E; text-align: center;">Suporte Enviado!</h1>
+  <p style="text-align: center; color: #333;">Obrigado pelo seu feedback!</p>
+  <div style="text-align: center; margin-top: 40px;">
+      <button class="button-large" onclick="showMainScreen()">Voltar</button>
+  </div>
+</div>
+
+<style>
+  .button-large {
+      background-color: #4CAF50; /* Cor do botão */
+      color: white; /* Cor do texto */
+      border: none;
+      border-radius: 12px;
+      padding: 20px 40px; /* Aumenta o tamanho do botão */
+      font-size: 20px; /* Aumenta o tamanho do texto */
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+  }
+
+  .button-large:hover {
+      background-color: #3e8e41; /* Cor ao passar o mouse */
+  }
+</style>
+
+
+
+
+
+<script>
+  function showCollectorScreen() {
+    hideAllScreens();
+    document.getElementById('collector-screen').style.display = 'block';
+  }
+
+  function showCollectorSentScreen() {
+    hideAllScreens();
+    document.getElementById('collector-sent-screen').style.display = 'block';
+  }
+
+  function showResidentialCollectionScreen() {
+    hideAllScreens();
+    document.getElementById('residential-collection-screen').style.display = 'block';
+  }
+
+  function showResidentialCollectionSentScreen() {
+    hideAllScreens();
+    document.getElementById('residential-collection-sent-screen').style.display = 'block';
+  }
+
+  function showSupportScreen() {
+    hideAllScreens();
+    document.getElementById('support-screen').style.display = 'block';
+  }
+
+  function showSupportSentScreen() {
+    hideAllScreens();
+    document.getElementById('support-sent-screen').style.display = 'block';
+  }
+
+  function showMainScreen() {
+    hideAllScreens();
+    document.getElementById('main-screen').style.display = 'block';
+  }
+
+  // Função para ocultar todas as telas
+  function hideAllScreens() {
+    document.getElementById('main-screen').style.display = 'none';
+    document.getElementById('collector-screen').style.display = 'none';
+    document.getElementById('collector-sent-screen').style.display = 'none';
+    document.getElementById('residential-collection-screen').style.display = 'none';
+    document.getElementById('residential-collection-sent-screen').style.display = 'none';
+    document.getElementById('support-screen').style.display = 'none';
+    document.getElementById('support-sent-screen').style.display = 'none';
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

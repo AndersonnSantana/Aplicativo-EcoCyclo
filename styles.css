@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos Globais */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #184220;
+}
+
+.container, .main-screen, .login-screen {
+    max-width: 400px;
+    width: 100%;
+    background-color: #e4ccb5;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo e Títulos */
+.logo h1 {
+    font-size: 24px;
+    color: #805d3a;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #2b8b2e;
+    margin-bottom: 15px;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #075e4b, #3aba7c);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #3aba7c, #075e4b);
+}
+
+/* Links */
+.login-link, .forgot-password {
+    color: #1f3d38;
+    font-size: 12px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.login-link:hover, .forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Botões Sociais */
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.google-btn, .facebook-btn, .create-account, .btn-entrar {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.google-btn {
+    background-color: #4285F4;
+}
+
+.facebook-btn {
+    background-color: #3B5998;
+}
+
+.create-account {
+    background-color: transparent;
+    border: 1px solid #00AF66;
+    color: #ffffff;
+}
+
+.btn-entrar {
+    background-color: #00AF66;
+}
+
+/* Estilos Específicos */
+.info-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.btn-solicitar, .btn-mostrar {
+    background-color: #00AF66;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-mostrar {
+    background-color: #E0A52A;
+}
+
+.no-register-link {
+    color: #1f3d38; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    text-decoration: none; /* Sem sublinhado */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    display: inline-block;
+}
+
+.no-register-link:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+
+

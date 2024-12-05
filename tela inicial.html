@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecocyclo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #1e5631;
+    }
+
+    .container {
+      width: 320px;
+      background-color: #f0f0f0;
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #6ea96e;
+    }
+
+    .search-bar {
+      width: 100%;
+      margin: 15px 0;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .card-title {
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .btn-solicitar, .btn-mostrar {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn-mostrar {
+      background-color: #3e8e41;
+    }
+
+    .btn-solicitar:hover, .btn-mostrar:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<!--body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">ECOCYCLO</div>
+      <div>
+        <img src="user-icon.png" alt="UsuÃ¡rio" width="30">
+      </div>
+    </div>
+    
+    <input type="text" class="search-bar" placeholder="Sobre o aplicativo">
+    
+    <div class="section">
+      <div class="section-title">Recicle aqui</div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">Coleta Residencial</div>
+        </div>
+        <button class="btn-solicitar">Solicitar</button>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">Minhas Coletas</div>
+        </div>
+        <button class="btn-mostrar">Mostrar</button>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Comunique aqui</div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">Chamar Coletores</div>
+        </div>
+        <button class="btn-solicitar">Solicitar</button>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">Contatar Suporte</div>
+        </div>
+        <button class="btn-solicitar">Solicitar</button>
+      </div>
+    </div>
+  </div>
+</body--->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCyclo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">ECOCYCLO</div>
+      <div>
+        <img src="./imagens/usuario.png" alt="Usuário" width="70">
+      </div>
+    </div>
+    
+    <input type="text" class="search-bar" placeholder="Sobre o aplicativo">
+    
+    <div class="section">
+      <div class="section-title">Recicle aqui</div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./imagens/caminhao lixoooo.png" alt="Coleta Residencial" class="card-image"> <!-- Espaço para imagem -->
+          <div class="card-title">Coleta Residencial</div>
+        </div>
+        <button class="btn-solicitar">Solicitar</button>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./imagens/Captura_de_tela_2024-10-01_145329-removebg-preview.png" alt="Minhas Coletas" class="card-image"> <!-- Espaço para imagem -->
+          <div class="card-title">Minhas Coletas</div>
+        </div>
+        <button class="btn-mostrar">Mostrar</button>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Comunique aqui</div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./imagens/coletores.png" alt="Chamar Coletores" class="card-image"> <!-- Espaço para imagem -->
+          <div class="card-title">Chamar Coletores</div>
+        </div>
+        <button class="btn-solicitar">Solicitar</button>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="./imagens/png-clipart-employment-customer-service-labor-consultant-others-miscellaneous-service-removebg-preview.png" alt="Contatar Suporte" class="card-image"> <!-- Espaço para imagem -->
+          <div class="card-title">Contatar Suporte</div>
+        </div>
+        <button class="btn-solicitar">Solicitar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+</html>

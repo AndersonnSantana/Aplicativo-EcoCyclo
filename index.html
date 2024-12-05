@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCyclo - Login e Registro</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo e título -->
+    <div class="logo">
+      <img src="./imagens/Captura_de_tela_2024-09-30_194148-removebg-preview.png" alt="EcoCyclo Logo" width="150px" height="150px">
+      <!--h1>EcoCyclo</h1--->
+    </div>
+
+    <!-- Formulário de Registro -->
+    <div id="register-form" class="form">
+      <h2>Venha Mudar o Nosso Planeta</h2>
+      <form action="#">
+        <input type="text" placeholder="Nome do Usuário" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="CNPJ ou CPF" required>
+        <input type="text" placeholder="(DDD) celular" required>
+        <input type="password" placeholder="Senha" required>
+        <input type="password" placeholder="Confirme sua Senha" required>
+        <a href="#" class="login-link" onclick="toggleForm()">Já possui conta? Entre aqui</a>
+        <a href="appfuncionando.html" class="no-register-link">Entrar sem registro</a>
+
+        <button type="button" onclick="window.location.href='appfuncionando.html'" style="padding: 10px; border: none; border-radius: 20px; background: linear-gradient(90deg, #075e4b, #3aba7c); color: #fff; font-weight: bold; font-size: 16px; cursor: pointer;">Registrar</button>
+
+      
+
+      </form>
+    </div>
+
+
+
+    <!-- Formulário de Login --->
+    <div id="login-form" class="form" style="display: none;">
+      <h2>Seja Muito Bem-vindo Novamente!</h2>
+      <form action="#">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Senha" required>
+        <a href="#" class="forgot-password" onclick="contactSupport()">Esqueceu a senha? Contate-nos</a>
+        <a href="appfuncionando.html" class="no-register-link">Entrar sem registro</a>
+
+        <div class="social-buttons">
+          <button type="button" class="google-btn" onclick="loginWithGoogle()">
+            <img src="data:image/png;base64,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" alt="" width="50px" height="50px"></button >
+          <button type="button" class="facebook-btn" onclick="loginWithFacebook()">
+            <img src="data:image/png;base64,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" alt="" width="50px" height="50px"></button>
+          </button>
+        </div>
+        <a href="#" class="register-link" onclick="toggleForm()">Não tem uma conta? Cadastre-se aqui</a>
+        <!--button type="submit">Entrar</button--->
+
+        <button type="button" onclick="window.location.href='appfuncionando.html'" style="padding: 10px; border: none; border-radius: 20px; background: linear-gradient(90deg, #075e4b, #3aba7c); color: #fff; font-weight: bold; font-size: 16px; cursor: pointer;">Entrar</button>
+
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Função para alternar entre as telas de registro e login
+    function toggleForm() {
+      const registerForm = document.getElementById('register-form');
+      const loginForm = document.getElementById('login-form');
+      if (registerForm.style.display === 'none') {
+        registerForm.style.display = 'block';
+        loginForm.style.display = 'none';
+      } else {
+        registerForm.style.display = 'none';
+        loginForm.style.display = 'block';
+      }
+    }
+
+    // Funções fictícias para login com Google e Facebook
+    function loginWithGoogle() {
+      alert('Login com Google não implementado');
+    }
+
+    function loginWithFacebook() {
+      alert('Login com Facebook não implementado');
+    }
+
+    // Função fictícia para recuperar senha
+    function contactSupport() {
+      alert('Recuperação de senha não implementada');
+    }
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html---->
+
+
+

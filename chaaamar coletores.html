@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamar Coletores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1B5938; /* Cor de fundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 320px;
+            background-color: #e4ccb5; /* Cor do fundo do card */
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 60px;
+        }
+        .user-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #e4ccb5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .button {
+            background-color: #37A96E; /* Cor do botão */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .input-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border: 2px solid #37A96E;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #FFFFFF;
+        }
+        .input-container img,
+        .input-container i {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .input-container input {
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+        .input-container textarea {
+            border: none;
+            outline: none;
+            width: 100%;
+            resize: none;
+        }
+        .button-secondary {
+            background-color: #FFFFFF; /* Botão "Voltar" */
+            color: #37A96E;
+            border: 2px solid #37A96E;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./imagens/Captura_de_tela_2024-09-30_194148-removebg-preview.png" alt="Logo" class="logo" height="50px" width="50px"> <!-- Substitua 'logo.png' pelo caminho da sua logo -->
+            <div class="user-icon"><img src="./imagens/usuario.png" alt="" width="50px" height="50px"></div> <!-- Ícone de usuário -->
+        </div>
+        <h1 style="text-align: center; font-size: 18px; color: #1B5938;">Chamar Coletores</h1>
+        <div class="input-container">
+            <i class="location-icon">📍</i> <!-- Ícone de localização -->
+            <input type="text" placeholder="Insira sua Localização">
+        </div>
+        <div class="input-container">
+            <i class="image-icon">🖼️</i> <!-- Ícone de imagem -->
+            <input type="text" placeholder="Insira Imagem">
+        </div>
+        <div class="input-container">
+            <textarea placeholder="Coloque a descrição" rows="3"></textarea>
+        </div>
+        <!--button class="button">Enviar Chamado</button--->
+        <button class="button" onclick="window.location.href='chamadocoletores.html'">Enviar Chamado</button>
+
+        <!--button class="button-secondary">Voltar</button--->
+        <button class="button-secondary" onclick="window.location.href='appfuncionando.html'">Voltar</button>
+
+    </div>
+</body>
+</html>

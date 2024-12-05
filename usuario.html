@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Usuário - Ecocyclo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #1e5631;
+    }
+
+    .container {
+      width: 320px;
+      background-color: #e4ccb5;
+      border-radius: 15px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #6ea96e;
+      margin-bottom: 10px;
+    }
+
+    .profile-header {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+
+    }
+
+    .profile-header h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .profile-details {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-details p {
+      margin: 5px 0;
+    }
+
+    .edit-link {
+      color: #007BFF;
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: underline;
+      margin-left: 5px;
+    }
+
+    .info-section {
+      width: 100%;
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      cursor: text;
+      display: flex;
+      align-items: center;
+    }
+
+    .info-section img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .btn-sair {
+      width: 80%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    
+    }
+
+    .btn-sair:hover {
+      opacity: 0.9;
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: #1e5631;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+     margin-top: 10px;
+    }
+
+    .navbar-item {
+      text-align: center;
+      color: white;
+      font-size: 12px;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .navbar-item img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 5px;
+    }
+
+    .navbar-item:hover {
+      opacity: 0.8;
+    }
+
+.imageeeee{
+justify-content: center;
+align-items: center;
+display: flex;
+margin-left: 20%;
+width: 100px;
+
+
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo"><img src="./imagens/Captura_de_tela_2024-09-30_194148-removebg-preview.png " width="160px" height="160px"></div>
+    
+    <div class="profile-header">
+      <h2>Olá, Usuário!</h2>
+      <img src="./imagens/usuario.png" alt="Descrição do perfil" width="50px" class="imageeeee">
+      <span>Categoria principal: XXX</span><br>
+      <span>Feedbacks: ★★★★★</span><br>
+      <span class="edit-link">Editar</span>
+    </div>
+
+    <div class="info-section">
+      <input type="text" placeholder="Nome do Perfil" required>
+
+    </div>
+    <div class="info-section">
+        <input type="text" placeholder="Dados Pessoais">
+  
+ 
+
+
+    </div>
+
+
+
+    <div class="info-section">
+      <input type="text" placeholder="Meus Endereços" required>
+ 
+
+
+    </div>
+
+
+
+
+    <div class="info-section">
+      <input type="text" placeholder="
+      Alterar Senha " required>
+    
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button class="btn-sair">Sair</button>
+
+    <div class="navbar">
+      <div class="navbar-item">
+        <img src="./img-barrinha/suporte1-removebg-preview.png" alt="Suporte">
+        <p>Suporte</p>
+      </div>
+      <div class="navbar-item">
+        <img src="./img-barrinha/coletores.png" alt="Coletores">
+        <p>Coletores</p>
+      </div>
+      <div class="navbar-item">
+        <img src="./img-barrinha/846449.png" alt="Início">
+        <p>Início</p>
+      </div>
+      <div class="navbar-item">
+        <img src="./img-barrinha/sobre.png" alt="Sobre">
+        <p>Sobre</p>
+      </div>
+      <div class="navbar-item">
+        <img src="./img-barrinha/perfil.png" alt="Perfil">
+        <p>Perfil</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
